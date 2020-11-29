@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4998BFB0257419CC00434288 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4998BFAF257419CC00434288 /* README.md */; };
 		49EDF47E253B43360000BD1C /* MultiComp WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 49EDF47D253B43360000BD1C /* MultiComp WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		49EDF483253B43380000BD1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49EDF482253B43380000BD1C /* Assets.xcassets */; };
 		49EDF48A253B43380000BD1C /* MultiComp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 49EDF489253B43380000BD1C /* MultiComp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -60,6 +61,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4998BFAF257419CC00434288 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		49EDF479253B43360000BD1C /* MultiComp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiComp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49EDF47D253B43360000BD1C /* MultiComp WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MultiComp WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49EDF482253B43380000BD1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 		49EDF472253B43360000BD1C = {
 			isa = PBXGroup;
 			children = (
+				4998BFAF257419CC00434288 /* README.md */,
 				49EDF481253B43360000BD1C /* MultiComp WatchKit App */,
 				49EDF48D253B43380000BD1C /* MultiComp WatchKit Extension */,
 				49EDF47A253B43360000BD1C /* Products */,
@@ -232,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4998BFB0257419CC00434288 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
