@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49EDF47E253B43360000BD1C /* MultiComp WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 49EDF47D253B43360000BD1C /* MultiComp WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		49EDF483253B43380000BD1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49EDF482253B43380000BD1C /* Assets.xcassets */; };
+		49EDF48A253B43380000BD1C /* MultiComp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 49EDF489253B43380000BD1C /* MultiComp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		49EDF48F253B43380000BD1C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EDF48E253B43380000BD1C /* ContentView.swift */; };
+		49EDF491253B43380000BD1C /* MultiCompApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EDF490253B43380000BD1C /* MultiCompApp.swift */; };
+		49EDF493253B43380000BD1C /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EDF492253B43380000BD1C /* ComplicationController.swift */; };
+		49EDF495253B43390000BD1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49EDF494253B43390000BD1C /* Assets.xcassets */; };
+		49EDF498253B43390000BD1C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49EDF497253B43390000BD1C /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		49EDF47F253B43360000BD1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49EDF473253B43360000BD1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49EDF47C253B43360000BD1C;
+			remoteInfo = "MultiComp WatchKit App";
+		};
+		49EDF48B253B43380000BD1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49EDF473253B43360000BD1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49EDF488253B43380000BD1C;
+			remoteInfo = "MultiComp WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		49EDF49F253B43390000BD1C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				49EDF48A253B43380000BD1C /* MultiComp WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49EDF4A3253B43390000BD1C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				49EDF47E253B43360000BD1C /* MultiComp WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		49EDF479253B43360000BD1C /* MultiComp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiComp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49EDF47D253B43360000BD1C /* MultiComp WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MultiComp WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49EDF482253B43380000BD1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		49EDF484253B43380000BD1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49EDF489253B43380000BD1C /* MultiComp WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MultiComp WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49EDF48E253B43380000BD1C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		49EDF490253B43380000BD1C /* MultiCompApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiCompApp.swift; sourceTree = "<group>"; };
+		49EDF492253B43380000BD1C /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		49EDF494253B43390000BD1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		49EDF497253B43390000BD1C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		49EDF499253B43390000BD1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49EDF486253B43380000BD1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49EDF472253B43360000BD1C = {
+			isa = PBXGroup;
+			children = (
+				49EDF481253B43360000BD1C /* MultiComp WatchKit App */,
+				49EDF48D253B43380000BD1C /* MultiComp WatchKit Extension */,
+				49EDF47A253B43360000BD1C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		49EDF47A253B43360000BD1C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49EDF479253B43360000BD1C /* MultiComp.app */,
+				49EDF47D253B43360000BD1C /* MultiComp WatchKit App.app */,
+				49EDF489253B43380000BD1C /* MultiComp WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49EDF481253B43360000BD1C /* MultiComp WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				49EDF482253B43380000BD1C /* Assets.xcassets */,
+				49EDF484253B43380000BD1C /* Info.plist */,
+			);
+			path = "MultiComp WatchKit App";
+			sourceTree = "<group>";
+		};
+		49EDF48D253B43380000BD1C /* MultiComp WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				49EDF490253B43380000BD1C /* MultiCompApp.swift */,
+				49EDF48E253B43380000BD1C /* ContentView.swift */,
+				49EDF492253B43380000BD1C /* ComplicationController.swift */,
+				49EDF494253B43390000BD1C /* Assets.xcassets */,
+				49EDF499253B43390000BD1C /* Info.plist */,
+				49EDF496253B43390000BD1C /* Preview Content */,
+			);
+			path = "MultiComp WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		49EDF496253B43390000BD1C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				49EDF497253B43390000BD1C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49EDF478253B43360000BD1C /* MultiComp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49EDF4A4253B43390000BD1C /* Build configuration list for PBXNativeTarget "MultiComp" */;
+			buildPhases = (
+				49EDF477253B43360000BD1C /* Resources */,
+				49EDF4A3253B43390000BD1C /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49EDF480253B43360000BD1C /* PBXTargetDependency */,
+			);
+			name = MultiComp;
+			productName = MultiComp;
+			productReference = 49EDF479253B43360000BD1C /* MultiComp.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		49EDF47C253B43360000BD1C /* MultiComp WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49EDF4A0253B43390000BD1C /* Build configuration list for PBXNativeTarget "MultiComp WatchKit App" */;
+			buildPhases = (
+				49EDF47B253B43360000BD1C /* Resources */,
+				49EDF49F253B43390000BD1C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49EDF48C253B43380000BD1C /* PBXTargetDependency */,
+			);
+			name = "MultiComp WatchKit App";
+			productName = "MultiComp WatchKit App";
+			productReference = 49EDF47D253B43360000BD1C /* MultiComp WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		49EDF488253B43380000BD1C /* MultiComp WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49EDF49C253B43390000BD1C /* Build configuration list for PBXNativeTarget "MultiComp WatchKit Extension" */;
+			buildPhases = (
+				49EDF485253B43380000BD1C /* Sources */,
+				49EDF486253B43380000BD1C /* Frameworks */,
+				49EDF487253B43380000BD1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MultiComp WatchKit Extension";
+			productName = "MultiComp WatchKit Extension";
+			productReference = 49EDF489253B43380000BD1C /* MultiComp WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49EDF473253B43360000BD1C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					49EDF478253B43360000BD1C = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					49EDF47C253B43360000BD1C = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					49EDF488253B43380000BD1C = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = 49EDF476253B43360000BD1C /* Build configuration list for PBXProject "MultiComp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 49EDF472253B43360000BD1C;
+			productRefGroup = 49EDF47A253B43360000BD1C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49EDF478253B43360000BD1C /* MultiComp */,
+				49EDF47C253B43360000BD1C /* MultiComp WatchKit App */,
+				49EDF488253B43380000BD1C /* MultiComp WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49EDF477253B43360000BD1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49EDF47B253B43360000BD1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49EDF483253B43380000BD1C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49EDF487253B43380000BD1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49EDF498253B43390000BD1C /* Preview Assets.xcassets in Resources */,
+				49EDF495253B43390000BD1C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49EDF485253B43380000BD1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49EDF491253B43380000BD1C /* MultiCompApp.swift in Sources */,
+				49EDF48F253B43380000BD1C /* ContentView.swift in Sources */,
+				49EDF493253B43380000BD1C /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		49EDF480253B43360000BD1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49EDF47C253B43360000BD1C /* MultiComp WatchKit App */;
+			targetProxy = 49EDF47F253B43360000BD1C /* PBXContainerItemProxy */;
+		};
+		49EDF48C253B43380000BD1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49EDF488253B43380000BD1C /* MultiComp WatchKit Extension */;
+			targetProxy = 49EDF48B253B43380000BD1C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		49EDF49A253B43390000BD1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		49EDF49B253B43390000BD1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49EDF49D253B43390000BD1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MultiComp WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = VZ3Z8BPWPW;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "MultiComp WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.codechimp.MultiComp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		49EDF49E253B43390000BD1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MultiComp WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = VZ3Z8BPWPW;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "MultiComp WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.codechimp.MultiComp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		49EDF4A1253B43390000BD1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VZ3Z8BPWPW;
+				IBSC_MODULE = MultiComp_WatchKit_Extension;
+				INFOPLIST_FILE = "MultiComp WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = org.codechimp.MultiComp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		49EDF4A2253B43390000BD1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VZ3Z8BPWPW;
+				IBSC_MODULE = MultiComp_WatchKit_Extension;
+				INFOPLIST_FILE = "MultiComp WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = org.codechimp.MultiComp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		49EDF4A5253B43390000BD1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VZ3Z8BPWPW;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.codechimp.MultiComp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		49EDF4A6253B43390000BD1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VZ3Z8BPWPW;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.codechimp.MultiComp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49EDF476253B43360000BD1C /* Build configuration list for PBXProject "MultiComp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49EDF49A253B43390000BD1C /* Debug */,
+				49EDF49B253B43390000BD1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49EDF49C253B43390000BD1C /* Build configuration list for PBXNativeTarget "MultiComp WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49EDF49D253B43390000BD1C /* Debug */,
+				49EDF49E253B43390000BD1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49EDF4A0253B43390000BD1C /* Build configuration list for PBXNativeTarget "MultiComp WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49EDF4A1253B43390000BD1C /* Debug */,
+				49EDF4A2253B43390000BD1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49EDF4A4253B43390000BD1C /* Build configuration list for PBXNativeTarget "MultiComp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49EDF4A5253B43390000BD1C /* Debug */,
+				49EDF4A6253B43390000BD1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49EDF473253B43360000BD1C /* Project object */;
+}
