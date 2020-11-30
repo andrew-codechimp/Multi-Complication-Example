@@ -19,14 +19,14 @@ struct MultiCompApp: App {
         WindowGroup {
             NavigationView {
                 TabView(selection: $selectedTab) {
-                    ContentView(instance: 0).tag(0)
-                    ContentView(instance: 1).tag(1)
-                    ContentView(instance: 2).tag(2)
+                    ForEach(MyPublications.shared.publications, id: \.id) { publication in
+                        ContentView(publication: publication).tag(publication.id)
+                    }
                 }
                 .tabViewStyle(PageTabViewStyle())
             }
             .onContinueUserActivity("org.codechimp.multicomp", perform: {userActivity in
-                if let id = userActivity.userInfo?["instance"] as? Int {
+                if let id = userActivity.userInfo?["id"] as? Int {
                     selectedTab = id
                 }
             })

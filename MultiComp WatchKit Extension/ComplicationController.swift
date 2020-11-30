@@ -16,16 +16,14 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
 
         var descriptors: [CLKComplicationDescriptor] = []
 
-        for instance in 0...2 {
-
+        for publication in MyPublications.shared.publications {
             var dataDict = Dictionary<AnyHashable, Any>()
-            dataDict = ["instance": instance]
+            dataDict = ["id": publication.id]
 
             let userActivity = NSUserActivity(activityType: "org.codechimp.multicomp")
             userActivity.userInfo = dataDict
 
-           descriptors.append(CLKComplicationDescriptor(identifier: "\(instance)", displayName: "Hello, World \(instance)", supportedFamilies: CLKComplicationFamily.allCases, userActivity: userActivity)
-
+            descriptors.append(CLKComplicationDescriptor(identifier: "\(publication.id)", displayName: "\(publication.publicationName)", supportedFamilies: CLKComplicationFamily.allCases, userActivity: userActivity)
             )
         }
         
@@ -65,7 +63,16 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     
     func getLocalizableSampleTemplate(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTemplate?) -> Void) {
         // This method will be called once per supported complication, and the results will be cached
-        handler(nil)
+
+        let simpleTextProvider1 = CLKSimpleTextProvider(text: "Publication")
+        let simpleTextProvider2 = CLKSimpleTextProvider(text: "Latest Headline")
+
+        switch (complication.family) {
+        case (.graphicRectangular):
+            handler(CLKComplicationTemplateGraphicRectangularStandardBody(headerTextProvider: simpleTextProvider1, body1TextProvider: simpleTextProvider2))
+        case (_):
+            handler(nil)
+        }
     }
 
     func createTimelineEntry(for complication: CLKComplication, date: Date) -> CLKComplicationTimelineEntry? {
@@ -77,14 +84,18 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     }
 
     func createTemplate(for complication: CLKComplication, date: Date) -> CLKComplicationTemplate? {
+        if let publication = MyPublications.shared.publications.first(where: {$0.id == Int(complication.identifier)}) {
+            let simpleTextProvider1 = CLKSimpleTextProvider(text: publication.publicationName)
+            let simpleTextProvider2 = CLKSimpleTextProvider(text: publication.latestHeadline)
 
-        let simpleTextProvider1 = CLKSimpleTextProvider(text: "MultiComp")
-        let simpleTextProvider2 = CLKSimpleTextProvider(text: "Hello, World \(complication.identifier)")
-
-        switch (complication.family) {
-        case (.graphicRectangular):
-            return CLKComplicationTemplateGraphicRectangularStandardBody(headerTextProvider: simpleTextProvider1, body1TextProvider: simpleTextProvider2)
-        case (_):
+            switch (complication.family) {
+            case (.graphicRectangular):
+                return CLKComplicationTemplateGraphicRectangularStandardBody(headerTextProvider: simpleTextProvider1, body1TextProvider: simpleTextProvider2)
+            case (_):
+                return nil
+            }
+        }
+        else {
             return nil
         }
     }

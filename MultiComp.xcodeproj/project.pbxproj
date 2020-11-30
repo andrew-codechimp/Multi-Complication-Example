@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4998BFB0257419CC00434288 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4998BFAF257419CC00434288 /* README.md */; };
+		4998BFB82575313B00434288 /* Publications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4998BFB72575313B00434288 /* Publications.swift */; };
 		49EDF47E253B43360000BD1C /* MultiComp WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 49EDF47D253B43360000BD1C /* MultiComp WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		49EDF483253B43380000BD1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49EDF482253B43380000BD1C /* Assets.xcassets */; };
 		49EDF48A253B43380000BD1C /* MultiComp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 49EDF489253B43380000BD1C /* MultiComp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -62,6 +63,7 @@
 
 /* Begin PBXFileReference section */
 		4998BFAF257419CC00434288 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4998BFB72575313B00434288 /* Publications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Publications.swift; sourceTree = "<group>"; };
 		49EDF479253B43360000BD1C /* MultiComp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiComp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49EDF47D253B43360000BD1C /* MultiComp WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MultiComp WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49EDF482253B43380000BD1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				49EDF490253B43380000BD1C /* MultiCompApp.swift */,
 				49EDF48E253B43380000BD1C /* ContentView.swift */,
 				49EDF492253B43380000BD1C /* ComplicationController.swift */,
+				4998BFB72575313B00434288 /* Publications.swift */,
 				49EDF494253B43390000BD1C /* Assets.xcassets */,
 				49EDF499253B43390000BD1C /* Info.plist */,
 				49EDF496253B43390000BD1C /* Preview Content */,
@@ -265,6 +268,7 @@
 			files = (
 				49EDF491253B43380000BD1C /* MultiCompApp.swift in Sources */,
 				49EDF48F253B43380000BD1C /* ContentView.swift in Sources */,
+				4998BFB82575313B00434288 /* Publications.swift in Sources */,
 				49EDF493253B43380000BD1C /* ComplicationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
