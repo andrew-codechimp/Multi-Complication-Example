@@ -12,8 +12,8 @@ final class MyPublications {
 
     private init() {
         self.publications.append(Publication(id: 0, publicationName: "Fruit News", latestHeadline: "Johnny Appleseed made CEO"))
-        self.publications.append(Publication(id: 1, publicationName: "Bird Chat", latestHeadline: "Outrage about something new"))
-        self.publications.append(Publication(id: 2, publicationName: "Book of people", latestHeadline: "New scam for you to fall for"))
+        self.publications.append(Publication(id: 1, publicationName: "Bird Chat", latestHeadline: "Excitement about something new"))
+        self.publications.append(Publication(id: 2, publicationName: "Coin Stats", latestHeadline: "Coins going up"))
     }
 
     static let shared = MyPublications()
